@@ -1,0 +1,63 @@
+:root {
+  --font-size: 24px; /* Default font size */
+}
+
+/* Apply the font size to all elements */
+html {
+  font-size: var(--font-size);
+}
+
+.page {
+  background-color: black;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+* {
+  color: white;
+}
+
+.submit-button button {
+  font-size: 20px;
+  border-radius: 10%;
+  color: white;
+  background-color: coral;
+  font-family: fantasy;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.next-button button {
+  font-size: 20px;
+  border-radius: 10%;
+  color: white;
+  background-color: coral;
+  font-family: fantasy;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.link {
+  color: beige;
+  font-size: larger;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  20% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+.ignore-class {
+  all: unset;
+}
+
+.play-pause-button {
+  background-color: transparent;
+  max-width: 50px;
+  cursor: pointer;
+}
+
+.play-container {
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: green;
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+}
+
+.album-cover {
+  max-width: 200px;
+  max-height: 200px;
+  background-color: aliceblue;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: darkgreen;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0px;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: darkgreen;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}

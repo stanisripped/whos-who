@@ -1,0 +1,17 @@
+.error {
+  color: red;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.settings-button {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  max-width: 50px;
+}

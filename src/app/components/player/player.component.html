@@ -1,0 +1,39 @@
+<!-- <button (click)="togglePlay()">{{ playing ? "Pause" : "Play" }}</button> -->
+<div class="center-container">
+  <img
+    class="album-cover"
+    src="../../../assets/images/album-cover.png"
+    alt="album cover"
+  />
+  <div class="play-container">
+    <button
+      class="ignore-class"
+      (click)="togglePlay()"
+      style="padding-top: 15px"
+    >
+      <div *ngIf="playing">
+        <img
+          class="play-pause-button"
+          src="../../../assets/images/pause.png"
+          alt="pause"
+        />
+      </div>
+      <div *ngIf="!playing">
+        <img
+          class="play-pause-button"
+          src="../../../assets/images/play-buttton.png"
+          alt="play"
+        />
+      </div>
+    </button>
+  </div>
+
+  <input
+    type="range"
+    min="0"
+    max="100"
+    [value]="playbackPosition"
+    (change)="seek($event)"
+    id="progress"
+  />
+</div>

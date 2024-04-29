@@ -1,0 +1,32 @@
+.error {
+  color: red;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.score {
+  text-align: center;
+}
+
+.score span {
+  margin: 15px;
+}
+
+.answers {
+  text-align: left;
+}
+
+.box {
+  border: 1px solid green;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}

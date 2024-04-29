@@ -1,0 +1,15 @@
+<div class="create-user-page">
+  <h1>WhosYou ?</h1>
+  <div class="text-input-box">
+    <app-text-input
+      [placeHolder]="'Enter a username...'"
+      (textChange)="receiveUsername($event)"
+    ></app-text-input>
+  </div>
+  <div *ngIf="showError === true" class="error">Username cannot be empty!</div>
+  <div class="submit-button">
+    <button style="font-weight: normal" (click)="onClick()">Submit</button>
+  </div>
+</div>
+
+<app-back-button></app-back-button>

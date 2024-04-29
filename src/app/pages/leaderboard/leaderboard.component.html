@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="users">
+    <h1 style="text-decoration: underline">LEADERBOARD</h1>
+    <div *ngFor="let item of display; index as i">
+      {{ i + 1 + ". " + item.username + " : " + item.score }}
+    </div>
+  </div>
+</div>
+
+<app-back-button *ngIf="!forResultPage"></app-back-button>

@@ -1,0 +1,29 @@
+<div>
+  <p>Current Score: {{ currentScore }}</p>
+  <div class="box">
+    <p>What is the name of this {{ playMode }} ?</p>
+    <div class="answers">
+      <div *ngFor="let answer of answerOptions">
+        <input
+          type="radio"
+          name="answer"
+          [value]="answer"
+          (click)="check(answer)"
+        />
+        {{ answer }}
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showError" class="error">
+    Please choose an answer before submitting!
+  </div>
+  <div *ngIf="answerChosen && submitClicked">
+    <div *ngIf="correctSelected" class="correct">Correct!</div>
+    <div *ngIf="!correctSelected" class="incorrect">Incorrect!</div>
+  </div>
+  <div class="submit-button" style="margin-top: 20px">
+    <button *ngIf="!answerChosen || !submitClicked" (click)="showCorrect()">
+      Submit
+    </button>
+  </div>
+</div>

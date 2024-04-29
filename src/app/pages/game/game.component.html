@@ -1,0 +1,29 @@
+<div class="settings-button">
+  <a [routerLink]="'/settings'">
+    <img
+      class="settings-button"
+      src="../../../assets/images/settings.png"
+      alt="settings icon"
+    />
+  </a>
+</div>
+<div class="center-container">
+  <p>Question {{ questionNumber }}</p>
+
+  <app-player [url]="currentTrack.url"></app-player>
+  <app-question
+    [track]="currentTrack"
+    [trackUrl]="currentUrl"
+    [playMode]="playMode"
+    [answerOptions]="currentAnswers"
+    [trackName]="currentName"
+    [correctAnswer]="currentArtist"
+    [nextClicked]="nextClicked"
+  ></app-question>
+  <div class="error" *ngIf="showError">
+    Please choose an answer and press submit first!
+  </div>
+  <div class="next-button">
+    <button (click)="nextQuestion()">Next</button>
+  </div>
+</div>

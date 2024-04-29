@@ -1,0 +1,47 @@
+.home-page {
+  height: 100vh;
+  width: 100vw;
+
+  color: beige;
+
+  position: absolute;
+  box-shadow: 0 0 70px 70px inset darkslategray;
+}
+
+.home-page p {
+  text-align: center;
+}
+
+.home-page h1 {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-page a {
+  color: beige;
+  font-size: xxx-large;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-page a:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  20% {
+    opacity: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+  row-gap: 40px;
+}
